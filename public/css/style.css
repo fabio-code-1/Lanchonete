@@ -1,0 +1,81 @@
+body {
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+#page-container {
+    position: relative;
+    min-height: 98vh;
+}
+
+#content-wrap {
+    padding-bottom: 4rem;
+    /* altura do rodapé */
+}
+
+
+header {
+    height: 60vh;
+    margin-bottom: 10vh;
+
+}
+
+#banner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    height: 100%;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    border: 5px solid rgb(255, 255, 255);
+}
+.logo img{
+    height: 90px;
+    width: 90px;
+}
+
+.p-header {
+    font-weight: 500;
+    font-size: larger;
+}
+
+.conteudo {
+    z-index: 1;
+}
+
+
+footer {
+    border-radius: 5px;
+    margin-bottom: -1%;
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    height: 4rem;
+    /* altura do rodapé */
+}
+
+
+
+@media only screen and (max-width: 500px) and (max-height:1300px) {
+    header {
+        height: 65vh;
+    }
+
+    #pelicula {
+        z-index: 1;
+        position: absolute;
+        height: 65vh;
+        width: 94%;
+        background-color: rgba(0, 0, 0, 0.559);
+    }
+}
